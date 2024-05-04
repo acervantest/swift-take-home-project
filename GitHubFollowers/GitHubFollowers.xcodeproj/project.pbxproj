@@ -16,6 +16,10 @@
 		BD59A4EF2BE3438B00D42342 /* GFButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4EE2BE3438B00D42342 /* GFButton.swift */; };
 		BD59A4F12BE3477900D42342 /* GFTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4F02BE3477900D42342 /* GFTextField.swift */; };
 		BD59A4F32BE356BC00D42342 /* FollowerListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4F22BE356BC00D42342 /* FollowerListViewController.swift */; };
+		BD59A4F52BE460AF00D42342 /* GFTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4F42BE460AF00D42342 /* GFTitleLabel.swift */; };
+		BD59A4F72BE462C000D42342 /* GFBodyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4F62BE462C000D42342 /* GFBodyLabel.swift */; };
+		BD59A4F92BE4639600D42342 /* GFAlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4F82BE4639600D42342 /* GFAlertViewController.swift */; };
+		BD59A4FB2BE5EA4D00D42342 /* UIViewController+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A4FA2BE5EA4D00D42342 /* UIViewController+Ext.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +34,10 @@
 		BD59A4EE2BE3438B00D42342 /* GFButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFButton.swift; sourceTree = "<group>"; };
 		BD59A4F02BE3477900D42342 /* GFTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTextField.swift; sourceTree = "<group>"; };
 		BD59A4F22BE356BC00D42342 /* FollowerListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerListViewController.swift; sourceTree = "<group>"; };
+		BD59A4F42BE460AF00D42342 /* GFTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFTitleLabel.swift; sourceTree = "<group>"; };
+		BD59A4F62BE462C000D42342 /* GFBodyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFBodyLabel.swift; sourceTree = "<group>"; };
+		BD59A4F82BE4639600D42342 /* GFAlertViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAlertViewController.swift; sourceTree = "<group>"; };
+		BD59A4FA2BE5EA4D00D42342 /* UIViewController+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Ext.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,9 +77,13 @@
 				BD59A4E42BE20D1E00D42342 /* Info.plist */,
 				BD59A4EA2BE3314000D42342 /* SearchViewController.swift */,
 				BD59A4EC2BE3316E00D42342 /* FavoritesListViewController.swift */,
+				BD59A4F22BE356BC00D42342 /* FollowerListViewController.swift */,
 				BD59A4EE2BE3438B00D42342 /* GFButton.swift */,
 				BD59A4F02BE3477900D42342 /* GFTextField.swift */,
-				BD59A4F22BE356BC00D42342 /* FollowerListViewController.swift */,
+				BD59A4F42BE460AF00D42342 /* GFTitleLabel.swift */,
+				BD59A4F62BE462C000D42342 /* GFBodyLabel.swift */,
+				BD59A4F82BE4639600D42342 /* GFAlertViewController.swift */,
+				BD59A4FA2BE5EA4D00D42342 /* UIViewController+Ext.swift */,
 			);
 			path = GitHubFollowers;
 			sourceTree = "<group>";
@@ -146,10 +158,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD59A4F92BE4639600D42342 /* GFAlertViewController.swift in Sources */,
 				BD59A4F12BE3477900D42342 /* GFTextField.swift in Sources */,
 				BD59A4EB2BE3314000D42342 /* SearchViewController.swift in Sources */,
+				BD59A4FB2BE5EA4D00D42342 /* UIViewController+Ext.swift in Sources */,
 				BD59A4EF2BE3438B00D42342 /* GFButton.swift in Sources */,
 				BD59A4F32BE356BC00D42342 /* FollowerListViewController.swift in Sources */,
+				BD59A4F72BE462C000D42342 /* GFBodyLabel.swift in Sources */,
+				BD59A4F52BE460AF00D42342 /* GFTitleLabel.swift in Sources */,
 				BD59A4D72BE20D1A00D42342 /* AppDelegate.swift in Sources */,
 				BD59A4ED2BE3316E00D42342 /* FavoritesListViewController.swift in Sources */,
 				BD59A4D92BE20D1A00D42342 /* SceneDelegate.swift in Sources */,
