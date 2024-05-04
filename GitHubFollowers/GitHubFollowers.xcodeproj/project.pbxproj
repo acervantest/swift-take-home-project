@@ -70,22 +70,54 @@
 		BD59A4D52BE20D1A00D42342 /* GitHubFollowers */ = {
 			isa = PBXGroup;
 			children = (
+				BD59A4FF2BE5F18400D42342 /* Files */,
+				BD59A4FE2BE5F15700D42342 /* Extensions */,
+				BD59A4FD2BE5F12A00D42342 /* CustomViews */,
+				BD59A4FC2BE5F0BB00D42342 /* Screens */,
 				BD59A4D62BE20D1A00D42342 /* AppDelegate.swift */,
 				BD59A4D82BE20D1A00D42342 /* SceneDelegate.swift */,
-				BD59A4DF2BE20D1E00D42342 /* Assets.xcassets */,
-				BD59A4E12BE20D1E00D42342 /* LaunchScreen.storyboard */,
-				BD59A4E42BE20D1E00D42342 /* Info.plist */,
+			);
+			path = GitHubFollowers;
+			sourceTree = "<group>";
+		};
+		BD59A4FC2BE5F0BB00D42342 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
 				BD59A4EA2BE3314000D42342 /* SearchViewController.swift */,
 				BD59A4EC2BE3316E00D42342 /* FavoritesListViewController.swift */,
 				BD59A4F22BE356BC00D42342 /* FollowerListViewController.swift */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		BD59A4FD2BE5F12A00D42342 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
 				BD59A4EE2BE3438B00D42342 /* GFButton.swift */,
 				BD59A4F02BE3477900D42342 /* GFTextField.swift */,
 				BD59A4F42BE460AF00D42342 /* GFTitleLabel.swift */,
 				BD59A4F62BE462C000D42342 /* GFBodyLabel.swift */,
 				BD59A4F82BE4639600D42342 /* GFAlertViewController.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		BD59A4FE2BE5F15700D42342 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
 				BD59A4FA2BE5EA4D00D42342 /* UIViewController+Ext.swift */,
 			);
-			path = GitHubFollowers;
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		BD59A4FF2BE5F18400D42342 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				BD59A4E42BE20D1E00D42342 /* Info.plist */,
+				BD59A4E12BE20D1E00D42342 /* LaunchScreen.storyboard */,
+				BD59A4DF2BE20D1E00D42342 /* Assets.xcassets */,
+			);
+			name = Files;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
