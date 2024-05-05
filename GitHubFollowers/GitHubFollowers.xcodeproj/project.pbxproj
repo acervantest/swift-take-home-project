@@ -27,6 +27,7 @@
 		BD59A50D2BE6BECC00D42342 /* FollowerViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A50C2BE6BECC00D42342 /* FollowerViewCell.swift */; };
 		BD59A50F2BE6BF4A00D42342 /* GFAvatarImageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A50E2BE6BF4A00D42342 /* GFAvatarImageview.swift */; };
 		BD59A5112BE6F9AB00D42342 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5102BE6F9AB00D42342 /* UIHelper.swift */; };
+		BD59A5142BE722D200D42342 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +53,7 @@
 		BD59A50C2BE6BECC00D42342 /* FollowerViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowerViewCell.swift; sourceTree = "<group>"; };
 		BD59A50E2BE6BF4A00D42342 /* GFAvatarImageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageview.swift; sourceTree = "<group>"; };
 		BD59A5102BE6F9AB00D42342 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
+		BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +119,7 @@
 				BD59A4F62BE462C000D42342 /* GFBodyLabel.swift */,
 				BD59A4F82BE4639600D42342 /* GFAlertViewController.swift */,
 				BD59A50E2BE6BF4A00D42342 /* GFAvatarImageview.swift */,
+				BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				BD59A5022BE5F8B400D42342 /* Follower.swift in Sources */,
 				BD59A50F2BE6BF4A00D42342 /* GFAvatarImageview.swift in Sources */,
 				BD59A4F52BE460AF00D42342 /* GFTitleLabel.swift in Sources */,
+				BD59A5142BE722D200D42342 /* GFEmptyStateView.swift in Sources */,
 				BD59A5072BE6010D00D42342 /* NetworkManager.swift in Sources */,
 				BD59A4D72BE20D1A00D42342 /* AppDelegate.swift in Sources */,
 				BD59A4ED2BE3316E00D42342 /* FavoritesListViewController.swift in Sources */,
