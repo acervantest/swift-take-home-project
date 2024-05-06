@@ -29,6 +29,9 @@
 		BD59A5112BE6F9AB00D42342 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5102BE6F9AB00D42342 /* UIHelper.swift */; };
 		BD59A5142BE722D200D42342 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */; };
 		BD59A5162BE8689E00D42342 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5152BE8689E00D42342 /* UserInfoViewController.swift */; };
+		BD59A5182BE889B600D42342 /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */; };
+		BD59A51A2BE88A2A00D42342 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5192BE88A2A00D42342 /* GFSecondaryTitleLabel.swift */; };
+		BD59A51C2BE8928000D42342 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A51B2BE8928000D42342 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +59,9 @@
 		BD59A5102BE6F9AB00D42342 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
 		BD59A5152BE8689E00D42342 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
+		BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
+		BD59A5192BE88A2A00D42342 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
+		BD59A51B2BE8928000D42342 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +129,8 @@
 				BD59A4F82BE4639600D42342 /* GFAlertViewController.swift */,
 				BD59A50E2BE6BF4A00D42342 /* GFAvatarImageview.swift */,
 				BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */,
+				BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */,
+				BD59A5192BE88A2A00D42342 /* GFSecondaryTitleLabel.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -167,6 +175,7 @@
 			children = (
 				BD59A5092BE60E9100D42342 /* ErrorMessage.swift */,
 				BD59A5102BE6F9AB00D42342 /* UIHelper.swift */,
+				BD59A51B2BE8928000D42342 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -255,14 +264,17 @@
 				BD59A4EB2BE3314000D42342 /* SearchViewController.swift in Sources */,
 				BD59A4FB2BE5EA4D00D42342 /* UIViewController+Ext.swift in Sources */,
 				BD59A5112BE6F9AB00D42342 /* UIHelper.swift in Sources */,
+				BD59A51C2BE8928000D42342 /* Constants.swift in Sources */,
 				BD59A4EF2BE3438B00D42342 /* GFButton.swift in Sources */,
 				BD59A50D2BE6BECC00D42342 /* FollowerViewCell.swift in Sources */,
+				BD59A5182BE889B600D42342 /* GFUserInfoHeaderViewController.swift in Sources */,
 				BD59A4F32BE356BC00D42342 /* FollowerListViewController.swift in Sources */,
 				BD59A50A2BE60E9100D42342 /* ErrorMessage.swift in Sources */,
 				BD59A4F72BE462C000D42342 /* GFBodyLabel.swift in Sources */,
 				BD59A5022BE5F8B400D42342 /* Follower.swift in Sources */,
 				BD59A50F2BE6BF4A00D42342 /* GFAvatarImageview.swift in Sources */,
 				BD59A4F52BE460AF00D42342 /* GFTitleLabel.swift in Sources */,
+				BD59A51A2BE88A2A00D42342 /* GFSecondaryTitleLabel.swift in Sources */,
 				BD59A5142BE722D200D42342 /* GFEmptyStateView.swift in Sources */,
 				BD59A5072BE6010D00D42342 /* NetworkManager.swift in Sources */,
 				BD59A4D72BE20D1A00D42342 /* AppDelegate.swift in Sources */,
