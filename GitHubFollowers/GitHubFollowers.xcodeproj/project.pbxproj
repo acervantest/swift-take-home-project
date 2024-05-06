@@ -28,6 +28,7 @@
 		BD59A50F2BE6BF4A00D42342 /* GFAvatarImageview.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A50E2BE6BF4A00D42342 /* GFAvatarImageview.swift */; };
 		BD59A5112BE6F9AB00D42342 /* UIHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5102BE6F9AB00D42342 /* UIHelper.swift */; };
 		BD59A5142BE722D200D42342 /* GFEmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */; };
+		BD59A5162BE8689E00D42342 /* UserInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5152BE8689E00D42342 /* UserInfoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		BD59A50E2BE6BF4A00D42342 /* GFAvatarImageview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFAvatarImageview.swift; sourceTree = "<group>"; };
 		BD59A5102BE6F9AB00D42342 /* UIHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIHelper.swift; sourceTree = "<group>"; };
 		BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFEmptyStateView.swift; sourceTree = "<group>"; };
+		BD59A5152BE8689E00D42342 /* UserInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +107,7 @@
 				BD59A4EA2BE3314000D42342 /* SearchViewController.swift */,
 				BD59A4EC2BE3316E00D42342 /* FavoritesListViewController.swift */,
 				BD59A4F22BE356BC00D42342 /* FollowerListViewController.swift */,
+				BD59A5152BE8689E00D42342 /* UserInfoViewController.swift */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -263,6 +266,7 @@
 				BD59A5142BE722D200D42342 /* GFEmptyStateView.swift in Sources */,
 				BD59A5072BE6010D00D42342 /* NetworkManager.swift in Sources */,
 				BD59A4D72BE20D1A00D42342 /* AppDelegate.swift in Sources */,
+				BD59A5162BE8689E00D42342 /* UserInfoViewController.swift in Sources */,
 				BD59A4ED2BE3316E00D42342 /* FavoritesListViewController.swift in Sources */,
 				BD59A4D92BE20D1A00D42342 /* SceneDelegate.swift in Sources */,
 			);
