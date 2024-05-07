@@ -32,6 +32,7 @@
 		BD59A5182BE889B600D42342 /* GFUserInfoHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */; };
 		BD59A51A2BE88A2A00D42342 /* GFSecondaryTitleLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A5192BE88A2A00D42342 /* GFSecondaryTitleLabel.swift */; };
 		BD59A51C2BE8928000D42342 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A51B2BE8928000D42342 /* Constants.swift */; };
+		BD59A51E2BE8A60D00D42342 /* GFItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD59A51D2BE8A60D00D42342 /* GFItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFUserInfoHeaderViewController.swift; sourceTree = "<group>"; };
 		BD59A5192BE88A2A00D42342 /* GFSecondaryTitleLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFSecondaryTitleLabel.swift; sourceTree = "<group>"; };
 		BD59A51B2BE8928000D42342 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BD59A51D2BE8A60D00D42342 /* GFItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GFItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +133,7 @@
 				BD59A5132BE722D200D42342 /* GFEmptyStateView.swift */,
 				BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */,
 				BD59A5192BE88A2A00D42342 /* GFSecondaryTitleLabel.swift */,
+				BD59A51D2BE8A60D00D42342 /* GFItemInfoView.swift */,
 			);
 			path = CustomViews;
 			sourceTree = "<group>";
@@ -268,6 +271,7 @@
 				BD59A4EF2BE3438B00D42342 /* GFButton.swift in Sources */,
 				BD59A50D2BE6BECC00D42342 /* FollowerViewCell.swift in Sources */,
 				BD59A5182BE889B600D42342 /* GFUserInfoHeaderViewController.swift in Sources */,
+				BD59A51E2BE8A60D00D42342 /* GFItemInfoView.swift in Sources */,
 				BD59A4F32BE356BC00D42342 /* FollowerListViewController.swift in Sources */,
 				BD59A50A2BE60E9100D42342 /* ErrorMessage.swift in Sources */,
 				BD59A4F72BE462C000D42342 /* GFBodyLabel.swift in Sources */,
