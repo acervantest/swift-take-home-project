@@ -92,9 +92,9 @@
 			children = (
 				BD59A5172BE889B600D42342 /* GFUserInfoHeaderViewController.swift */,
 				BD59A51F2BE9B4A800D42342 /* GFItemInfoViewController.swift */,
-				BD59A51D2BE8A60D00D42342 /* GFItemInfoView.swift */,
 				BD4B20872BE9C49B000D80B6 /* GFRepoItemViewController.swift */,
 				BD4B20892BE9C7BE000D80B6 /* GFFollowerItemViewController.swift */,
+				BD59A51D2BE8A60D00D42342 /* GFItemInfoView.swift */,
 			);
 			path = ItemInfo;
 			sourceTree = "<group>";
