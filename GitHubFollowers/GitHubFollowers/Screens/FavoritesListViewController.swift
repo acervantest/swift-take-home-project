@@ -24,6 +24,16 @@ class FavoritesListViewController: UIViewController {
         getFavorites()
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        let subViews = view.subviews
+        subViews.forEach { view in
+            if let view = view as? GFEmptyStateView {
+                view.removeFromSuperview()
+            }
+        }
+    }
+    
     func configureViewController() {
         view.backgroundColor = .systemBackground
         title = "Favorites"
@@ -55,8 +65,8 @@ class FavoritesListViewController: UIViewController {
                 if favorites.isEmpty {
                     showEmptyStateView(with: "No favorites yet. \n Add from the followers screen.", in: self.view)
                 } else {
-                    self.favorites = favorites
                     DispatchQueue.main.async {
+                        self.favorites = favorites
                         self.tableView.reloadData()
                         self.view.bringSubviewToFront(self.tableView)
                     }
