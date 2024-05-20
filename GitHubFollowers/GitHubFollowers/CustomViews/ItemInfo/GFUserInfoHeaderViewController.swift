@@ -35,7 +35,7 @@ class GFUserInfoHeaderViewController: UIViewController {
     }
     
     func configureUIElements() {
-        avatarImageView.setImage(from: user.avatarUrl)
+        downloadAvatarImage()
         usernameLabel.text = user.login
         nameLabel.text = user.name ?? ""
         
@@ -46,6 +46,15 @@ class GFUserInfoHeaderViewController: UIViewController {
         bioLabel.text = user.bio ?? "No Bio Available"
         bioLabel.numberOfLines = 3
         
+    }
+    
+    func downloadAvatarImage() {
+        NetworkManager.shared.downloadImage(from: user.avatarUrl) { [weak self] image in
+            guard let self = self else { return }
+            DispatchQueue.main.async {
+                self.avatarImageView.image = image
+            }
+        }
     }
 
     func addSubviews() {
