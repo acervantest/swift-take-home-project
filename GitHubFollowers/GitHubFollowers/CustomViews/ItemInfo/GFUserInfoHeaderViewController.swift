@@ -39,7 +39,7 @@ class GFUserInfoHeaderViewController: UIViewController {
         usernameLabel.text = user.login
         nameLabel.text = user.name ?? ""
         
-        locationImageView.image = UIImage(systemName: SFSymbols.location)
+        locationImageView.image = SFSymbols.location
         locationImageView.tintColor = .secondaryLabel
         
         locationLabel.text = user.location ?? "No Location"
