@@ -8,8 +8,7 @@
 import UIKit
 
 protocol UserInfoDelegate: AnyObject {
-    func didTapGithubProfile(for user: User)
-    func didTapGetFollowers(for user: User)
+    func didRequestFollowers(for username: String)
 }
 
 class UserInfoViewController: GFDataLoadingViewController {
@@ -22,7 +21,7 @@ class UserInfoViewController: GFDataLoadingViewController {
     
     var username: String!
    
-    weak var delegate: FollowerListDelegate!
+    weak var delegate: UserInfoDelegate!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -56,15 +55,11 @@ class UserInfoViewController: GFDataLoadingViewController {
     }
     
     func configureUIElements(with user: User) {
-        let repoItemVC = GFRepoItemViewController(user: user)
-        repoItemVC.delegate = self
-        
-        let followerItemVC = GFFollowerItemViewController(user: user)
-        followerItemVC.delegate = self
         
         self.add(childVC: GFUserInfoHeaderViewController(user: user), to: self.headerView)
-        self.add(childVC: repoItemVC, to: self.itemOneView)
-        self.add(childVC: followerItemVC, to: self.itemTwoView)
+        self.add(childVC: GFRepoItemViewController(user: user, delegate: self), to: self.itemOneView)
+        self.add(childVC: GFFollowerItemViewController(user: user, delegate: self), to: self.itemTwoView)
+        
         self.dateLabel.text = "Github since \(user.createdAt.convertToMonthYearFormat())"
     }
     
@@ -87,7 +82,7 @@ class UserInfoViewController: GFDataLoadingViewController {
         
         NSLayoutConstraint.activate([
             headerView.topAnchor.constraint(equalTo: view.safeAreaLayoutGuide.topAnchor),
-            headerView.heightAnchor.constraint(equalToConstant: 180),
+            headerView.heightAnchor.constraint(equalToConstant: 210),
             
             itemOneView.topAnchor.constraint(equalTo: headerView.bottomAnchor, constant: padding),
             itemOneView.heightAnchor.constraint(equalToConstant: itemHeight),
@@ -96,7 +91,7 @@ class UserInfoViewController: GFDataLoadingViewController {
             itemTwoView.heightAnchor.constraint(equalToConstant: itemHeight),
             
             dateLabel.topAnchor.constraint(equalTo: itemTwoView.bottomAnchor, constant: padding),
-            dateLabel.heightAnchor.constraint(equalToConstant: 18)
+            dateLabel.heightAnchor.constraint(equalToConstant: 50)
         ])
     }
     
@@ -112,8 +107,9 @@ class UserInfoViewController: GFDataLoadingViewController {
     }
 }
 
-// MARK: - User Info Delegate
-extension UserInfoViewController: UserInfoDelegate {
+// MARK: - User Info Delegates
+
+extension UserInfoViewController: RepoItemDelegate {
     
     func didTapGithubProfile(for user: User) {
         guard let url = URL(string: user.htmlUrl) else {
@@ -123,14 +119,17 @@ extension UserInfoViewController: UserInfoDelegate {
         
         presentSafariViewController(with: url)
     }
-    
+}
+
+extension UserInfoViewController: FollowerItemDelegate {
+
     func didTapGetFollowers(for user: User) {
         guard user.followers != 0 else {
             presentGFAlertOnMainThread(title: "No Followers", message: "This user has no followers.", buttonTitle: "Ok")
             return
         }
+        
         delegate.didRequestFollowers(for: user.login)
         dismissViewController()
     }
-    
 }
